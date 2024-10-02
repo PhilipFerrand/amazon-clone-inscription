@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="public/CSS/style.css" />
+
+    <title>Inscription Amazon Clone</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="public/img/logo.png" alt="" />
+      </div>
+      <form action="">
+        <h1>Créer un compte Amazon Clone</h1>
+
+        <div class="input-group">
+          <label for="userName">Votre nom</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Prénom et nom"
+          />
+
+          <div class="error-container error-name-msg">
+            <i class="bx bxs-info-circle"></i>
+            <div class="msg">Saisissez votre nom</div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="email"
+            >Numéro de téléphone portable ou adresse e-mail</label
+          >
+          <input type="text" name="email" id="email" />
+
+          <div class="error-container error-email-msg">
+            <i class="bx bxs-info-circle"></i>
+            <div class="msg">
+              Saisissez votre adresse e-mail ou numéro de téléphone portable
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Mot de passe</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Au moins 6 caractères"
+          />
+          <div class="error-container error-password-msg">
+            <i class="bx bxs-info-circle"></i>
+            <div class="msg">6 caractères minimum requis</div>
+          </div>
+
+          <div class="info-password info-password-text">
+            <span>ℹ</span>
+            <p class="msg">
+              Les mots de passe doivent au moins avoir 6 caractères
+            </p>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Entrez le mot de passe à nouveau</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" />
+          <div class="error-container error-confirm-password-msg">
+            <i class="bx bxs-info-circle"></i>
+            <div class="msg">Les mots de passe ne correspondent pas</div>
+          </div>
+        </div>
+
+        <button type="submit">Continuer</button>
+
+        <div class="info-create-an-account">
+          <p>
+            En créant un compte, vous acceptez les
+            <a href="#">conditions d'utilisation et de vente</a> d'Amazon.
+            Consultez notre <a href="#">déclaration de confidentialité </a>,
+            notre <a href="#">politique relative aux cookies </a>ainsi que notre
+            <a href="#"
+              >politique relative aux publicités ciblées par dentre
+              d'intérêts</a
+            >.
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="info-create-an-account">
+          <h4 class="title-form">Vous achetez pour votre entreprise ?</h4>
+          <a href="#">Créez un compte professionnel gratuit</a>
+        </div>
+
+        <hr />
+
+        <div class="info-create-an-account already-an-account">
+          <h4 class="title-form">Vous possédez déjà un compte ?</h4>
+          <a href="#">Identifiez-vous</a>
+        </div>
+      </form>
+
+      <div class="confirm-form">
+        <h2 class="valide-message">Inscription validé</h2>
+        <p class="valide-text">
+          Merci pour votre inscription et pour votre confiance.
+        </p>
+
+        <div class="container-redirection">
+          <p class="redirection">Redirection en cours</p>
+
+          <div class="dot-redirection">
+            <span class="dot dot-1"></span>
+            <span class="dot dot-2"></span>
+            <span class="dot dot-3"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="public/JS/script.js"></script>
+  </body>
+</html>
